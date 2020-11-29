@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
+
+$main-font: 'Titillium Web', sans-serif;
+
+$primary-blue: #213140;
+$primary-green: #29AB87;
+
+$secondary-green: #239072; 
+$secondary-white: white;
+$secondary-grey: #f2f2f2;
+
+$common-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-family: $main-font;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-blue;
+    &:hover {
+        text-decoration: none;
+        color: $primary-green;
+    }
+}
+
+
+/**--------------------Modal**/
+
+.img-modal {
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+}
+
+/**--------------------header**/
+
+header {
+    clear:both;
+    color: $primary-blue;
+    position: relative;
+    height: 110px;
+    width: 100%;
+    z-index: 2;
+    h2 {
+        font-size: 28px;
+        margin: 1% auto;
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        list-style-type: none; 
+        margin: 0.2% 3% 0.2% 0;
+        text-align: right;
+    }
+}
+
+.header-div {
+    position: fixed;
+    clear: both;
+    width:100%;
+    background-color: $secondary-white;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: $common-shadow;
+    height: 120px;
+}
+
+#logo {
+    max-height: 80px;
+    margin: 7%;
+    transition: 0.4s; 
+    &:hover {
+        transform: scale(0.9, 0.9);
+    }
+}
+
+#contatti i {
+    width: 38px;
+    height: 38px;
+    padding: 5%;
+    margin-left:5px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    background: $primary-green;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    &:hover {
+        transform: scale(0.9, 0.9);
+        background-color: $secondary-green; 
+        color: $secondary-white; 
+        cursor: pointer;
+    }
+}
+
+
+
+/**--------------------Intro**/
+
+#intro {
+    padding: 5%;
+    background-image: url(../img/ditta/IMG_1353.jpg);
+    background-size: cover;
+	background-position: center; 
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    &:hover {
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+    p {
+        padding: 1%;
+        color: $secondary-white;
+        text-align: center;
+        font-size: 24px;
+        text-shadow: 2px 2px $secondary-green;
+    }
+}
+
+
+/**------------------------THREE CARDS**/
+
+.three-cards {
+    z-index: 0;
+    margin: 3% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        border-radius: 5px;
+        background-color: $secondary-grey;
+        clear: both;
+        height: 460px;
+        width: 320px;
+        margin: 30px auto;
+        text-align: center;
+        transition: 0.4s;
+    }
+    h3 {
+        font-size: 18px;
+        color: $primary-blue;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+
+#card-one {
+    background-image: url(../img/pronto-intervento.jpg);
+	background-size: cover;
+	background-position: center; 
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    border-radius: 0;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#card-two {
+    background-image: url(../img/vetraio.jpg);
+	background-size: cover;
+	background-position: center; 
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    border-radius: 0;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#card-three {
+    background-image: url(../img/lastre.jpg);
+	background-size: cover;
+	background-position: center; 
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    border-radius: 0;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#to-contact {
+    height: 35px;
+    text-transform: uppercase;
+    width: 50%;
+    background-color: $primary-green;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.three-cards a {
+    color: $secondary-white;
+    font-size: 12px;
+}
+
+.three-cards button:hover {
+    background-color: $primary-green;
+    transform: scale(0.9, 0.9);
+}
+
+#card-one:hover, #card-two:hover, #card-three:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+
+/**----------------DOVE OPERIAMO**/
+
+.broken-glass {
+    background-color: $secondary-grey;
+}
+
+#top_svg {
+    background-color: $secondary-white;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+#bottom_svg {
+    clear: both;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    background-color: $secondary-grey;
+}
+
+#dove {
+    background-color: $secondary-grey;
+    text-align: center;
+    color: $primary-blue;
+    padding: 0 2% 5%;
+    margin: 0 10%;
+}
+
+#dove p {
+    padding: 0 20px;
+    font-size: 20px; 
+    font-weight: 100;
+}
+
+.dove-operiamo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 10%;
+    padding-bottom: 3%;
+}
+
+.dove-operiamo div {
+    clear:both;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px auto 30px;
+    width: 325px;
+    cursor: pointer;
+    background-color: $secondary-white;
+}
+
+#dove strong {
+    font-size: 26px;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+}
+

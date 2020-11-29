@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #213140;
+}
+a:hover {
+  text-decoration: none;
+  color: #29AB87;
+}
+
+/**--------------------Modal**/
+.img-modal {
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+}
+
+/**--------------------header**/
+header {
+  clear: both;
+  color: #213140;
+  position: relative;
+  height: 110px;
+  width: 100%;
+  z-index: 2;
+}
+header h2 {
+  font-size: 28px;
+  margin: 1% auto;
+  display: flex;
+  align-items: center;
+}
+header ul {
+  list-style-type: none;
+  margin: 0.2% 3% 0.2% 0;
+  text-align: right;
+}
+
+.header-div {
+  position: fixed;
+  clear: both;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  height: 120px;
+}
+
+#logo {
+  max-height: 80px;
+  margin: 7%;
+  transition: 0.4s;
+}
+#logo:hover {
+  transform: scale(0.9, 0.9);
+}
+
+#contatti i {
+  width: 38px;
+  height: 38px;
+  padding: 5%;
+  margin-left: 5px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  background: #29AB87;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+#contatti i:hover {
+  transform: scale(0.9, 0.9);
+  background-color: #239072;
+  color: white;
+  cursor: pointer;
+}
+
+/**--------------------Intro**/
+#intro {
+  padding: 5%;
+  background-image: url(../img/ditta/IMG_1353.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+#intro:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+#intro p {
+  padding: 1%;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 2px 2px #239072;
+}
+
+/**------------------------THREE CARDS**/
+.three-cards {
+  z-index: 0;
+  margin: 3% 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.three-cards div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  clear: both;
+  height: 460px;
+  width: 320px;
+  margin: 30px auto;
+  text-align: center;
+  transition: 0.4s;
+}
+.three-cards h3 {
+  font-size: 18px;
+  color: #213140;
+}
+.three-cards p {
+  text-align: left;
+}
+
+#card-one {
+  background-image: url(../img/pronto-intervento.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border-radius: 0;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#card-two {
+  background-image: url(../img/vetraio.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border-radius: 0;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#card-three {
+  background-image: url(../img/lastre.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border-radius: 0;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#to-contact {
+  height: 35px;
+  text-transform: uppercase;
+  width: 50%;
+  background-color: #29AB87;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.three-cards a {
+  color: white;
+  font-size: 12px;
+}
+
+.three-cards button:hover {
+  background-color: #29AB87;
+  transform: scale(0.9, 0.9);
+}
+
+#card-one:hover, #card-two:hover, #card-three:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+/**----------------DOVE OPERIAMO**/
+.broken-glass {
+  background-color: #f2f2f2;
+}
+
+#top_svg {
+  background-color: white;
+  clear: both;
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+}
+
+#bottom_svg {
+  clear: both;
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+  background-color: #f2f2f2;
+}
+
+#dove {
+  background-color: #f2f2f2;
+  text-align: center;
+  color: #213140;
+  padding: 0 2% 5%;
+  margin: 0 10%;
+}
+
+#dove p {
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.dove-operiamo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 10%;
+  padding-bottom: 3%;
+}
+
+.dove-operiamo div {
+  clear: both;
+  height: 100%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px auto 30px;
+  width: 325px;
+  cursor: pointer;
+  background-color: white;
+}
+
+#dove strong {
+  font-size: 26px;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
