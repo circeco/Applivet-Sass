@@ -99,9 +99,10 @@ header ul {
   font-size: 20px;
 }
 
-#ditta {
-  min-height: 400px;
+.ditta {
+  min-height: 500px;
   background-image: url("../assets/img/ditta/IMG_1353.jpg");
+  opacity: 0.8;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
@@ -110,20 +111,24 @@ header ul {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
-#ditta:hover {
-  -webkit-filter: grayscale(0%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
-}
 
 /**------------------------THREE CARDS**/
-.three-cards {
+#three-cards {
   z-index: 0;
-  margin: 3% 5%;
+  margin: 0 5% 3%;
   display: flex;
   flex-wrap: wrap;
+  -webkit-filter: none;
+  /* Safari 6.0 - 9.0 */
+  filter: none;
+  opacity: unset;
 }
-.three-cards div {
+#three-cards img {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+#three-cards div {
   border-radius: 5px;
   background-color: #f2f2f2;
   clear: both;
@@ -133,54 +138,31 @@ header ul {
   text-align: center;
   transition: 0.4s;
 }
-.three-cards h3 {
+#three-cards h3 {
+  opacity: unset;
   font-size: 18px;
   color: #213140;
 }
-.three-cards p {
+#three-cards p {
   text-align: left;
+  padding: 5%;
+}
+#three-cards button:hover {
+  transform: scale(0.9, 0.9);
+}
+#three-cards a {
+  color: white;
+  font-size: 12px;
 }
 
-#card-one {
-  background-image: url(../img/pronto-intervento.jpg);
-  background-size: cover;
-  background-position: center;
+.card-img {
   width: 100%;
   height: 200px;
   margin: 0;
   border-radius: 0;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
-#card-two {
-  background-image: url(../img/vetraio.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 200px;
-  margin: 0;
-  border-radius: 0;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-
-#card-three {
-  background-image: url(../img/lastre.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 200px;
-  margin: 0;
-  border-radius: 0;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-
-#to-contact {
+.to-contact {
   height: 35px;
   text-transform: uppercase;
   width: 50%;
@@ -192,22 +174,6 @@ header ul {
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
-}
-
-.three-cards a {
-  color: white;
-  font-size: 12px;
-}
-
-.three-cards button:hover {
-  background-color: #29AB87;
-  transform: scale(0.9, 0.9);
-}
-
-#card-one:hover, #card-two:hover, #card-three:hover {
-  -webkit-filter: grayscale(0%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
 }
 
 /**----------------DOVE OPERIAMO**/
