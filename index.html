@@ -32,7 +32,7 @@
 
 <body>
 	<header>
-		<div class="header-div">
+		<div>
 			<a href="index.html">
                 <img id="logo" src="assets/img/applivet_logo-bianco.jpg" alt="applivet logo"></Img>
             </a>
@@ -72,18 +72,18 @@
         </div>
     </section>
 
-    <section>
-        <div id="ditta_photo">
-        </div>
-        <div id="intro">
-            <p><strong>APPLIVET</strong> è una vetreria artigianale che opera a Milano dal 1972, siamo vetrai da tre generazioni</p>
-            <p>Abbiamo una esperienza di quasi 50 anni nella fornitura e posa di vetri, cristalli e specchi per uso interno o esterno</p>
-            <p>Negli ultimi anni abbiamo allargato la nostra offerta di servizi e lavorazioni con serramenti e strutture per uso interno ed esterno con diversi tipi di materiale dall'alluminio, al PVC, al legno sino al ferro.</p>
-        </div>
-    </section>
 
-    <section id="three-cards">
-        <div>
+    <div id="ditta_photo">
+    </div>
+    <div id="intro">
+        <p><strong>APPLIVET</strong> è una vetreria artigianale che opera a Milano dal 1972, siamo vetrai da tre generazioni</p>
+        <p>Abbiamo una esperienza di quasi 50 anni nella fornitura e posa di vetri, cristalli e specchi per uso interno o esterno</p>
+        <p>Negli ultimi anni abbiamo allargato la nostra offerta di servizi e lavorazioni con serramenti e strutture per uso interno ed esterno con diversi tipi di materiale dall'alluminio, al PVC, al legno sino al ferro.</p>
+    </div>
+
+
+    <section class="cards_container">
+        <div class="three-cards">
             <h4>Pronto Intervento</h4>
             <img class="card-img" src="assets/img/pronto-intervento.jpg" alt="pronto intervento"></Img>
             <p>Messa in sicurezza immediata, sostituzioni e riparazioni per emergenze e manutenzione urgente di vetrine,
@@ -91,7 +91,7 @@
             </p>
             <button class="contact-button"><a href="#contattaci">Contattaci</a></button>
         </div>
-        <div>
+        <div class="three-cards">
             <h4>Riparazione e manutenzione</h4>
             <img class="card-img" src="assets/img/vetraio.jpg" alt="riparazioni"></Img>
             <p>Interventi di riparazione e restauro di finestre, porte (anche blindate), vetrine, cancellate, persiane,
@@ -99,7 +99,7 @@
             </p>
             <button class="contact-button"><a href="#contattaci">Contattaci</a></button>
         </div>
-        <div>
+        <div class="three-cards">
             <h4>Vetri e specchi su misura</h4>
             <img class="card-img" src="assets/img/tavolo_taglio.jpg" alt="vetri su misura"></Img>
             <p>Fornitura e installazione di vetri, cristalli, specchi su misura per interni o esterni, telai per
@@ -178,14 +178,14 @@
 
 	<section>
 		<div class="rombo-background">
-    	<svg class="top_svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" /><polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" /></svg>
-			<div id="dove-section">
+    	    <svg class="top_svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" /><polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" /></svg>
+			<div>
                 <h3>Dove operiamo</h3>
-				<p>Siamo attivi principalmente a <strong>MILANO</strong> e <strong>PROVINCIA</strong>
-					inclusa la <strong>PROVINCIA</strong> di <strong>MONZA</strong> e <strong>BRIANZA</strong></p> 
-                <p>su richiesta anche in altre zone della Lombardia e di Italia</p>
+				<p class="subtitle">Siamo attivi principalmente a <strong>MILANO</strong> e <strong>PROVINCIA</strong>
+					inclusa la <strong>PROVINCIA</strong> di <strong>MONZA</strong> e <strong>BRIANZA</strong>
+                    <br> su richiesta anche in altre zone della Lombardia e di Italia</p>
 			</div>
-			<div class="dove-operiamo">
+			<div class="container">
 				<div>
 					<h4 class="collapsible">Milano ▾</h4>
 					<div class="content">
@@ -274,20 +274,18 @@
         <svg class="bottom_svg" viewBox="0 0 100 100" preserveAspectRatio="none"> <polygon class="svg" fill="white" points="0,0 100,100 0,100" /><polygon class="svg" fill="white" points="0,0 100,100 0,100" /></svg>
 	</section>
 
-	<section style="margin: 0 5%">
-		<div class="soddisfiamo">
-			<svg id="top_svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" />
-				<polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" />
-			</svg>
-			<div class="soddisfiamo-description">
-				<h1 id="section-title">Servizi dedicati su misura</h1>
-				<p style="padding: 0 5% 20px">Soddisfiamo le vostre richieste specifiche con interventi specializzati e
+	<section>
+		<div class="rombo-background">
+    	    <svg class="top_svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" /><polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" /></svg>
+			<div>
+				<h3>Servizi dedicati su misura</h3>
+				<p class="subtitle">Soddisfiamo le vostre richieste specifiche con interventi specializzati e
 					personalizzati con posa e messa in opera di un vasto assordimento di prodotti di qualità,
 					offriamo disponibilità immediata con prodotti e servizi su misura per le vostre esigenze.
-					Chiedi informazioni o un preventivo gratuito.</p>
+					Chiedi informazioni o un preventivo gratuito.
+                </p>
 			</div>
-			<div class="servizi_dedicati">
+			<div class="container">
 				<div>
 					<h4 class="collapsible">per privati ▾</h4>
 					<div class="content">
@@ -331,48 +329,41 @@
 				</div>
 			</div>
 		</div>
-		<svg id="bottom_svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-			<polygon class="svg" fill="white" points="0,0 100,100 0,100" />
-			<polygon class="svg" fill="white" points="0,0 100,100 0,100" />
-		</svg>
+        <svg class="bottom_svg" viewBox="0 0 100 100" preserveAspectRatio="none"> <polygon class="svg" fill="white" points="0,0 100,100 0,100" /><polygon class="svg" fill="white" points="0,0 100,100 0,100" /></svg>
 	</section>
 
-	<section id="contattaci">
-		<svg id="top_svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-			<polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" />
-			<polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" />
-		</svg>
-		<h1 id="section-title" style="padding-top: 5%">Lascia un messaggio</h1>
-		<p style="padding: 0 5% 20px">per info o preventivo on-line gratuito e senza impegno!</p>
+	<section>
+        <div class="rombo-background">
+            <svg class="top_svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" /><polygon class="svg" fill="#f2f2f2" points="0,0 100,100 0,100" /></svg>
+            
+            <h3>Lascia un messaggio</h3>
+            <p>per info o preventivo on-line gratuito e senza impegno!</p>
+            <div id="contact-form">
+                <form id="myform">
+                    <label for="name">Nome o Azienda</label>
+                    <input type="text" name="from_name" required>
 
-		<div class="contact-section">
-			<div id="contact-form">
-				<form id="myform">
-					<label for="name">Nome o Azienda</label>
-					<input type="text" name="from_name" required>
+                    <label for="email">Indirizzo email</label>
+                    <input type="email" name="from_email" required>
 
-					<label for="email">Indirizzo email</label>
-					<input type="email" name="from_email" required>
+                    <label for="phone">Numero di telefono (optional)</label>
+                    <input type="phone" name="from_number">
 
-					<label for="phone">Numero di telefono (optional)</label>
-					<input type="phone" name="from_number">
+                    <label for="questions">Richiesta</label>
+                    <textarea rows="7" name="project_request" class="form-control" required></textarea>
 
-					<label for="questions">Richiesta</label>
-					<textarea rows="7" name="project_request" class="form-control" required></textarea>
-
-					<button id="button-form" type="submit">INVIA</button>
+                    <button id="button-form" type="submit">INVIA</button>
                 </form>
-			</div>
-		</div>
-	</section>
-
+            </div>
+        </div>
+    </section>
 
 	<footer>
         <p id="applivet"><strong>APPLIVET</strong></p>
         <p>Via Riccardo Pitteri, 23 - Milano</p>
         <p>TEL 022157273 - EMAIL <a href="mailto:applivetsrl@gmail.com">applivetsrl@gmail.it</a></p>
         <p>P.IVA 08272570964</p>
-		<p id="author">@copyright 2020 APPLIVET - realizzazione sito 
+		<p id="author">@copyright 2020 APPLIVET - web development
             <a href="https://circeco.github.io/Piero_resume/" target=”_blank”>Piero Grilli</a>
 		</p>
 	</footer>
