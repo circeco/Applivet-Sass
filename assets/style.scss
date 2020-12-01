@@ -19,6 +19,7 @@ $common-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
     line-height: 1.5;
     letter-spacing: 0.5px;
     font-family: $main-font;
+    color: $primary-blue;
 }
 
 a {
@@ -30,6 +31,34 @@ a {
     }
 }
 
+p {
+    padding: 3px;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 52px;
+    padding: 10%;
+    word-spacing: 20px;
+}
+
+h3 {
+    text-transform: uppercase; 
+    font-size: 40px;
+    padding: 5%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    padding: 3px;
+    text-transform: uppercase; 
+    font-weight: 600;
+}
+
 
 /**--------------------Modal**/
 
@@ -39,16 +68,15 @@ a {
     margin: 5% auto;
 }
 
-/**--------------------header**/
+/**--------------------HEADER**/
 
 header {
     clear:both;
-    color: $primary-blue;
     position: relative;
     height: 110px;
     width: 100%;
     z-index: 2;
-    h2 {
+    h1 {
         font-size: 28px;
         margin: 1% auto;
         display: flex;
@@ -89,12 +117,12 @@ header {
     margin-bottom: 1px;
     font-size: 16px;
     border-radius: 4px;
-    text-align: center;
     background: $primary-green;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+    box-shadow: $common-shadow;
     &:hover {
         transform: scale(0.9, 0.9);
         background-color: $secondary-green; 
@@ -102,6 +130,28 @@ header {
         cursor: pointer;
     }
 }
+
+
+/**------------------------FOOTER**/
+
+footer {
+    padding: 20px 0;
+    background-color: $secondary-grey;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    p#applivet{
+        font-size: 24px;
+    }
+    p#author {
+        font-size: 10px;
+        padding-top: 20px;
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
 
 /**--------------------Intro**/
 
@@ -111,13 +161,11 @@ header {
 
     p {
         padding: 1%;
-        color: $primary-blue;
-        text-align: center;
         font-size: 20px;
     }
 }
 
-.ditta {
+#ditta_photo {
     min-height: 500px;
     background-image: url('../assets/img/ditta/IMG_1353.jpg');
     opacity: 0.8;
@@ -156,11 +204,6 @@ header {
         text-align: center;
         transition: 0.4s;
     }
-    h3 {
-        opacity: unset;
-        font-size: 18px;
-        color: $primary-blue;
-    }
     p {
         text-align: left;
         padding: 5%;
@@ -180,11 +223,9 @@ header {
 .card-img {
     width: 100%;
     height: 200px;
-    margin: 0;
-    border-radius: 0;
 }
 
-.to-contact {
+.contact-button {
     height: 35px;
     text-transform: uppercase;
     width: 50%;
@@ -196,48 +237,86 @@ header {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+    box-shadow: $common-shadow;
 }
 
 
+/**-----------------CARDS------**/
+
+.cards_container {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5% 5%;
+}
+
+.cards {
+    height: 250px;
+    border-radius: 5px;
+    width: 325px;
+    transition: 0.4s;
+    cursor: pointer;
+    margin: 40px auto;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+    filter: grayscale(100%);
+    box-shadow: $common-shadow;
+
+    p {
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 3%;
+    }
+
+    &:hover {
+        transform: scale(0.9, 0.9);
+        opacity:unset;
+        filter: grayscale(0);
+    }
+}
 
 
+/**--------------------------------SVG---**/
 
-
-/**----------------DOVE OPERIAMO**/
-
-.broken-glass {
+.rombo-background {
     background-color: $secondary-grey;
 }
 
-#top_svg {
+svg {
+    width: 100%;
+    height: 200px;
+}
+
+.top_svg {
     background-color: $secondary-white;
-    clear: both;
-    width: 100%;
-    height: 200px;
-    z-index: -1;
 }
 
-#bottom_svg {
-    clear: both;
-    width: 100%;
-    height: 200px;
-    z-index: -1;
+.bottom_svg {
     background-color: $secondary-grey;
 }
 
-#dove {
+
+/**----------------DOVE section------**/
+
+
+#dove-section {
     background-color: $secondary-grey;
-    text-align: center;
-    color: $primary-blue;
     padding: 0 2% 5%;
     margin: 0 10%;
+
+    p {
+        padding: 0 20px;
+        font-size: 20px; 
+        font-weight: 100;
+        text-align: left;
+    }
+    strong {
+        font-size: 26px;
+    }
 }
 
-#dove p {
-    padding: 0 20px;
-    font-size: 20px; 
-    font-weight: 100;
-}
+
 
 .dove-operiamo {
     display: flex;
@@ -255,10 +334,6 @@ header {
     width: 325px;
     cursor: pointer;
     background-color: $secondary-white;
-}
-
-#dove strong {
-    font-size: 26px;
 }
 
 .content {
