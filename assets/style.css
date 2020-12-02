@@ -161,7 +161,7 @@ footer a {
 
 #ditta_photo {
   min-height: 500px;
-  background-image: url("../assets/img/ditta/IMG_1353.jpg");
+  background-image: url("../assets/img/photo_magazzino.jpg");
   opacity: 0.8;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -227,12 +227,12 @@ footer a {
 }
 
 .cards {
-  height: 250px;
+  height: 280px;
   border-radius: 5px;
-  width: 325px;
+  width: 350px;
   transition: 0.4s;
   cursor: pointer;
-  margin: 40px auto;
+  margin: 20px auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -245,7 +245,8 @@ footer a {
   padding: 3%;
 }
 .cards:hover {
-  transform: scale(0.9, 0.9);
+  z-index: 2;
+  transform: scale(1.2, 1.2);
   opacity: unset;
   filter: grayscale(0);
 }
