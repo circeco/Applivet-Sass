@@ -265,13 +265,23 @@ svg {
   background-color: white;
 }
 
+/**-----------------MAP------**/
+#map {
+  margin: 5% 10%;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  height: 500px;
+}
+
 /**----------------DOVE & SERVIZI DEDICATI section------**/
 .container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 3%;
 }
-.container div {
+.container div:not(.description, .photo_frame) {
   clear: both;
   height: 100%;
   text-align: center;
@@ -329,6 +339,76 @@ input[type=text], input[type=email], input[type=phone], textarea {
 }
 #button-form:hover {
   background-color: #239072;
+}
+
+/**---------------------DESCRIPTION PAGE-------**/
+.description {
+  background-color: #f2f2f2;
+  margin: 5% auto;
+  width: 60%;
+}
+.description h4 {
+  margin: 30px 0;
+  color: white;
+  padding: 0.5% 3%;
+  text-align: right;
+  background-color: #213140;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.description p {
+  text-align: left;
+  margin: 3%;
+  font-size: 18px;
+}
+
+.photo_frame {
+  margin: 5% auto;
+  width: 40%;
+  height: 400px;
+}
+
+.slider {
+  display: flex;
+  /* line them up horizontally */
+  overflow-x: auto;
+  /* allow for scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* make it smooth on iOS */
+}
+.slider div {
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.photo_loop {
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

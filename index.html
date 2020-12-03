@@ -14,6 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/d32fba75b2.js" crossorigin="anonymous"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/style.css">
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
@@ -125,6 +127,18 @@
 				<p>SPECCHI</p>
 			</a>
 
+			<a class="cards" href="description_page.html#lavorazioni1" style="background-image: url(assets/img/lavorazioni/molatura.jpg)">
+				<p>FORATURA E MOLATURA DEL VETRO</p>
+			</a>
+
+			<a class="cards" href="description_page.html#decorazioni1" style="background-image: url(assets/img/lavorazioni/IMG_7944.jpg)">
+				<p>DECORAZIONI E VETRI COLORATI</p>
+			</a>
+    
+			<a class="cards" href="description_page.html#eleven" style="background-image: url(assets/img/cornici/IMG_1241.jpg)">
+				<p>CORNICI E SUPPORTI</p>
+			</a>
+
 			<a class="cards" href="description_page.html#specchio1" style="background-image: url(assets/img/vetrina-negozio.jpg)">
 				<p>VETRINE, VETRI DI SICUREZZA E ANTISFONDAMENTO</p>
 			</a>
@@ -134,7 +148,7 @@
 			</a>
 
 			<a class="cards" href="description_page.html#parete1" style="background-image: url(assets/img/commerciale/IMG_9732.jpg)">
-				<p>STRUTTURE IN VETRO E FERRO PER IL COMMERCIO</p>
+				<p>SOLUZIONI IN VETRO E FERRO PER LA RISTORAZIONE E IL COMMERCIO</p>
 			</a>
 
             <a class="cards" href="description_page.html#scale1" style="background-image: url(assets/img/pareti_specchi/IMG_1674.jpg)">
@@ -158,19 +172,7 @@
 			</a>
 
             <a class="cards" href="description_page.html#soppalchi1" style="background-image: url(assets/img/ferro_interno/IMG_5506.jpg)">
-				<p>STRUTTURE IN FERRO PER L'INTERNO</p>
-			</a>
-
-			<a class="cards" href="description_page.html#lavorazioni1" style="background-image: url(assets/img/lavorazioni/molatura.jpg)">
-				<p>FORATURA E MOLATURA DEL VETRO</p>
-			</a>
-
-			<a class="cards" href="description_page.html#decorazioni1" style="background-image: url(assets/img/lavorazioni/IMG_7944.jpg)">
-				<p>DECORAZIONI E VETRI COLORATI</p>
-			</a>
-    
-			<a class="cards" href="description_page.html#eleven" style="background-image: url(assets/img/cornici/IMG_1241.jpg)">
-				<p>CORNICI E SUPPORTI</p>
+				<p>SCALE E STRUTTURE IN FERRO PER L'INTERNO</p>
 			</a>
 
 			<a class="cards" href="description_page.html#eleven" style="background-image: url(assets/img/persiane_inferiate/IMG_5271.jpg)">
@@ -197,90 +199,13 @@
 					inclusa la <strong>PROVINCIA</strong> di <strong>MONZA</strong> e <strong>BRIANZA</strong>
                     <br> su richiesta anche in altre zone della Lombardia e di Italia</p>
 			</div>
+
+            <div id="map"></div>
+
 			<div class="container">
-				<div>
-					<h4 class="collapsible">Milano ▾</h4>
-					<div class="content">
-						<p> Zona 1 - Centro storico, 5 Vie, Verziere, Cordusio, Brera, Porta Tenaglia, Porta Sempione,
-							Guastalla, Conca del Naviglio, Crocetta, Quadronno, Vetra, Carrobbio, Porta Nuova, Porta
-							Romana,
-							Porta Venezia, Porta Genova, Sant’Ambrogio.</p>
-						<p> Zona 2 - Stazione Centrale, Loreto, Turro, Crescenzago, Quartiere Adriano, Gorla, Precotto,
-							Ponte Seveso, Quartiere Maggiolina, Mirabello, Villaggio dei Giornalisti, Greco.</p>
-						<p> Zona 3 - Porta Venezia, Porta Monforte, Casoretto, Rottole, Quartiere Feltre, Cimiano,
-							Acquabella, Città Studi, Lambrate, Ortica.</p>
-						<p> Zona 4 - Porta Vittoria, Porta Romana, Cavriano, Quartiere Forlanini, Monluè, La Trecca,
-							Taliedo, Morsenchio, Ponte Lambro, Calvairate, Gamboloita o Corvetto, Quartiere Omero,
-							Nosedo,
-							Castagnedo, Rogoredo, Santa Giulia, San Luigi, Triulzo Superiore.</p>
-						<p> Zona 5 - Porta Vigentina, Porta Lodovica, San Gottardo, Morivione, Vigentino, Vaiano Valle,
-							Chiaravalle, Macconago, Stadera, Chiesa Rossa, Quartiere Le Terrazze, Case Nuove, Quartiere
-							Missaglia, Gratosoglio, Selvanesco, Quintosole, Ronchetto delle Rane, Quartiere Torretta,
-							Conca
-							Fallata, Quartiere Basmetto, Quartiere Cantalupa.</p>
-						<p> Zona 6 - Porta Ticinese, Porta Genova, Conchetta, Moncucco, Barona, Quartiere Sant’Ambrogio,
-							Quartiere Cascina Bianca, Boffalora, Quartiere Teramo, San Cristoforo, Quartiere Lodovico il
-							Moro, Ronchetto sul Naviglio, Quartiere Villa Magentino, Arzaga, Giambellino, Lorenteggio,
-							Villaggio dei Fiori, Creta.</p>
-						<p> Zona 7 - Porta Magenta, Quartiere De Angeli – Frua, San Siro, Quartiere Harar, Quartiere
-							Vercellese, Quarto Cagnino, Quinto Romano, Figino, Forze Armate, Baggio, Quartiere Valsesia,
-							Quartiere degli Olmi, Assiano, Muggiano.</p>
-						<p> Zona 8 - Porta Volta, Chinatown, Borgo degli Ortolani, Bullona, Ghisolfa, Portello, Cagnola,
-							Quartiere Campo dei Fiori, Villapizzone, Quartiere Varesina, Boldinasco, Garegnano, Certosa,
-							Musocco, Quarto Oggiaro, Vialba, Roserio, Cascina Triulza, Cascina Merlata, Q.T.8,
-							Lampugnano,
-							Quartiere Comina, Quartiere Gallaratese, Quartiere San Leonardo, Trenno.</p>
-						<p> Zona 9 - Porta Garibaldi, Varesine, Porta Nuova, Centro Direzionale, Isola, La Fontana,
-							Montalbino, Segnano, Bicocca, Fulvio Testi, Ca’ Granda, Pratocentenaro, Niguarda, Dergano,
-							Derganino, Bovisa, Affori, Bruzzano, Quartiere Comasina, Quartiere Bovisasca.</p>
-					</div>
-				</div>
-				<div>
-					<h4 class="collapsible">Provincia ▾</h4>
-					<div class="content">
-						<p> Abbiategrasso, Albairate, Arconate, Arese, Arluno, Assago, Baranzate, Bareggio, Basiano,
-							Basiglio, Bellinzago Lombardo, Bernate Ticino, Besate
-							Binasco, Boffalora sopra Ticino, Bollate, Bresso, Bubbiano, Buccinasco, Buscate, Bussero,
-							Busto
-							Garolfo, Calvignasco, Cambiago, Canegrate, Carpiano,
-							Carugate, Casarile, Casorezzo, Cassano d'Adda, Cassina de' Pecchi, Cassinetta di Lugagnano,
-							Castano Primo, Cernusco sul Naviglio, Cerro al Lambro, Cerro Maggiore,
-							Cesano Boscone, Cesate, Cinisello Balsamo, Cisliano, Cologno Monzese, Colturano, Corbetta,
-							Cormano, Cornaredo, Corsico, Cuggiono, Cusago, Cusano Milanino, Dairago,
-							Dresano, Gaggiano, Garbagnate Milanese, Gessate, Gorgonzola, Grezzago, Gudo Visconti,
-							Inveruno,
-							Inzago, Lacchiarella, Lainate, Legnano, Liscate, Locate di Triulzi,
-							Magenta, Magnago, Marcallo con Casone, Masate, Mediglia, Melegnano, Melzo, Mesero, Milano,
-							Morimondo, Motta Visconti,, Nerviano, Nosate, Novate Milanese, Noviglio,
-							Opera, Ossona, Ozzero, Paderno Dugnano, Pantigliate, Parabiago, Paullo, Pero, Peschiera
-							Borromeo, Pessano con Bornago, Pieve Emanuele, Pioltello, Pogliano Milanese,
-							Pozzo d'Adda, Pozzuolo Martesana, Pregnana Milanese, Rescaldina, Rho, Robecchetto con
-							Induno,
-							Robecco sul Naviglio, Rodano, Rosate, Rozzano, San Colombano al Lambro,
-							San Donato Milanese, San Giorgio su Legnano, San Giuliano Milanese, San Vittore Olona, San
-							Zenone al Lambro, Santo Stefano Ticino, Sedriano, Segrate, Senago,
-							Sesto San Giovanni, Settala, Settimo Milanese, Solaro, Trezzano Rosa, Trezzano sul Naviglio,
-							Trezzo sull'Adda, Tribiano, Truccazzano, Turbigo, Vanzaghello, Vanzago,
-							Vaprio d'Adda, Vermezzo con Zelo, Vernate, Vignate, Villa Cortese, Vimodrone, Vittuone,
-							Vizzolo Predabissi, Zibido San Giacomo
-						</p>
-					</div>
-				</div>
-				<div>
-					<h4 class="collapsible">Brianza ▾</h4>
-					<div class="content">
-						<p>Brianza Occidentale: Barlassina, Bovisio Masciago, Ceriano Laghetto, Cesano Maderno,
-							Cogliate,
-							Lazzate, Lentate sul Seveso, Limbiate, Meda, Misinto, Seregno, Seveso e Varedo.</p>
-						<p>Brianza Centrale: ALbiate, Besana in Brianza, Biassono, Briosco, Brugherio, Carate Brianza,
-							Correzzana, Desio, Giussano, Lesmo, Lissone, Macherio, Monza, Muggiò, Nova Milanese, Renate
-							Sovico, Triuggio, Vedano al Lambro, Verduggio con Colzano, Verano Brianza, Villasanta.</p>
-						<p>Brianza Orientale o Vimercatese: Agrate Brianza, Aicurzio, Arcore, Bellusco, Bernareggio,
-							Burago
-							di Molgora, Busnago, Camparada, Caponago, Carnate, Cavenago di Brianza, Concorezzo, Cornate
-							d'Adda, Mezzago, Ornago, Roncello, Ronco Briantino, Sulbiate, Usmate Velate, Vimercate. </p>
-					</div>
-				</div>
+
+
+
 			</div>
 		</div>
         <svg class="bottom_svg" viewBox="0 0 100 100" preserveAspectRatio="none"> <polygon class="svg" fill="white" points="0,0 100,100 0,100" /><polygon class="svg" fill="white" points="0,0 100,100 0,100" /></svg>
@@ -380,6 +305,7 @@
 		</p>
 	</footer>
 
+    <script src="assets/script/map.js"></script>
 	<script src="assets/script/applivet.js"></script>
     <script src="assets/script/modal.js"></script>
     <script src="assets/script/sendEmail.js"></script>
