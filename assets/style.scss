@@ -91,7 +91,7 @@ header {
     position: relative;
     height: 110px;
     width: 100%;
-    z-index: 2;
+    z-index: 99;
     h1 {
         font-size: 28px;
         margin: 1% auto;
@@ -298,13 +298,28 @@ svg {
 /**-----------------MAP------**/
 
 #map {
-    margin: 5% 10%;
+    margin: 0 10%;
     top: 0; 
     bottom: 0; 
     width: auto;
     height: 500px;
 }
 
+.mapboxgl-ctrl-top-left, .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+    visibility: hidden;
+}
+
+.marker {
+    background-image: url(../assets/img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 60px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    padding: 0;
+}
 
 
 /**----------------DOVE & SERVIZI DEDICATI section------**/
