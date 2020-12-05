@@ -35,7 +35,6 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-size: 40px;
-  padding-bottom: 2%;
   text-align: center;
 }
 
@@ -59,6 +58,13 @@ h4 {
 
 section {
   margin: 0 5%;
+}
+
+.container {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 3%;
 }
 
 /**--------------------Modal**/
@@ -149,16 +155,7 @@ footer a {
   text-decoration: underline;
 }
 
-/**--------------------Intro**/
-#intro {
-  padding: 5% 10%;
-  min-height: 300px;
-}
-#intro p {
-  padding: 1%;
-  font-size: 20px;
-}
-
+/**--------------------FIRST SECTION**/
 #ditta_photo {
   min-height: 500px;
   background-image: url("../assets/img/photo_magazzino.jpg");
@@ -172,7 +169,16 @@ footer a {
   filter: grayscale(100%);
 }
 
-/**------------------------THREE CARDS**/
+#intro {
+  padding: 10%;
+  min-height: 300px;
+}
+#intro p {
+  padding: 1%;
+  font-size: 20px;
+}
+
+/**------------------------THREE CARDS section**/
 .three-cards {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -218,14 +224,7 @@ footer a {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-/**-----------------GALLERY CARDS------**/
-.cards_container {
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 5% 5%;
-}
-
+/**-----------------CARDS GALLERY------**/
 .cards {
   height: 280px;
   border-radius: 5px;
@@ -285,26 +284,19 @@ svg {
   height: 50px;
   width: 60px;
   border: none;
-  border-radius: 30%;
+  border-radius: 20%;
   cursor: pointer;
   padding: 0;
 }
 
 /**----------------DOVE & SERVIZI DEDICATI section------**/
-.container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 3%;
-}
-.container div:not(.description, .photo_frame) {
+.whitebox {
   clear: both;
   height: 100%;
   text-align: center;
   border-radius: 5px;
-  margin: 20px auto 30px;
+  margin: 20px auto;
   width: 325px;
-  cursor: pointer;
   background-color: white;
 }
 

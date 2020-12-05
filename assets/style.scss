@@ -48,7 +48,6 @@ h2 {
 h3 {
     text-transform: uppercase; 
     font-size: 40px;
-    padding-bottom: 2%;
     text-align: center;
 }
 
@@ -73,6 +72,13 @@ h4 {
 
 section {
     margin: 0 5%;
+}
+
+.container {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
 }
 
 
@@ -169,17 +175,7 @@ footer {
 }
 
 
-/**--------------------Intro**/
-
-#intro {
-    padding: 5% 10%;
-    min-height: 300px;
-
-    p {
-        padding: 1%;
-        font-size: 20px;
-    }
-}
+/**--------------------FIRST SECTION**/
 
 #ditta_photo {
     min-height: 500px;
@@ -193,8 +189,18 @@ footer {
     filter: grayscale(100%);
 }
 
+#intro {
+    padding: 10%;
+    min-height: 300px;
 
-/**------------------------THREE CARDS**/
+    p {
+        padding: 1%;
+        font-size: 20px;
+    }
+}
+
+
+/**------------------------THREE CARDS section**/
 
 .three-cards {
     border-radius: 5px;
@@ -243,14 +249,7 @@ footer {
 }
 
 
-/**-----------------GALLERY CARDS------**/
-
-.cards_container {
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 5% 5%;
-}
+/**-----------------CARDS GALLERY------**/
 
 .cards {
     height: 280px;
@@ -295,6 +294,7 @@ svg {
     background-color: $secondary-white;
 }
 
+
 /**-----------------MAP------**/
 
 #map {
@@ -316,7 +316,7 @@ svg {
     height: 50px;
     width: 60px;
     border: none;
-    border-radius: 30%;
+    border-radius: 20%;
     cursor: pointer;
     padding: 0;
 }
@@ -324,22 +324,14 @@ svg {
 
 /**----------------DOVE & SERVIZI DEDICATI section------**/
 
-.container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 3%;
-
-    div:not(.description, .photo_frame) {
-        clear:both;
-        height: 100%;
-        text-align: center;
-        border-radius: 5px;
-        margin: 20px auto 30px;
-        width: 325px;
-        cursor: pointer;
-        background-color: $secondary-white;
-    }
+.whitebox {
+    clear:both;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 325px;
+    background-color: $secondary-white;
 }
 
 .collapsible:hover {
@@ -393,6 +385,7 @@ input[type=text], input[type=email], input[type=phone], textarea {
         background-color: #239072;
     }
 }
+
 
 /**---------------------DESCRIPTION PAGE-------**/
 
