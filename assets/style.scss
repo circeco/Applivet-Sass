@@ -9,7 +9,7 @@ $secondary-green: #239072;
 $secondary-white: white;
 $secondary-grey: #f2f2f2;
 
-$common-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+$common-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 
 * {
@@ -322,7 +322,7 @@ svg {
 }
 
 
-/**----------------DOVE & SERVIZI DEDICATI section------**/
+/*----------------DOVE section------*/
 
 .whitebox {
     clear:both;
@@ -334,17 +334,64 @@ svg {
     background-color: $secondary-white;
 }
 
-.collapsible:hover {
-    color: #239072;
-    border: none;
+/*------------------SERVIZI DEDICATI section------*/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 380px;
+    perspective: 1000px;
+
+    h4 {
+        padding: 20% 5%;
+    }
+
+    img {
+        max-width: 80px;
+    }
+
+    p {
+        padding: 3% 2% 0;
+        text-align: left;
+    }
+
+    a {
+        color: $primary-green;
+        position: absolute;
+        bottom: 5px;
+        text-decoration: underline;
+        font-weight: 600;
+    }
 }
 
-.content {
+.flip-card-inner {
     position: relative;
+    width: 100%;
     height: 100%;
-    display: none;
-    overflow: hidden;
-    text-align: left;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    box-shadow: $common-shadow;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #e1e1e1;
+}
+
+.flip-card-back {
+    background-color: $secondary-white;
+    transform: rotateY(180deg);
 }
 
 
@@ -429,21 +476,3 @@ input[type=text], input[type=email], input[type=phone], textarea {
     }
 }
 
-
-$photo1: background-image url("assets/img/serrande/IMG_4587.jpg");
-$photo2: background-image url("assets/img/serrande/IMG_6889.jpg");
-$photo3: background-image url("assets/img/serrande/IMG_7262.jpg");
-$photo4: background-image url("assets/img/serrande/IMG_7996.jpg");
-
-$photos: ($photo1, $photo2, $photo3, $photo4);
-
-.photo_loop {
-    @each $photo in $photos {
-        flex-shrink: 0;
-        width: 100%;
-        height: 400px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center; 
-    }
-}
