@@ -46,7 +46,6 @@ h4 {
 }
 
 .subtitle {
-  padding: 0 20px 3%;
   margin: 0 10%;
   font-size: 20px;
   font-weight: 100;
@@ -170,7 +169,7 @@ footer a {
 }
 
 #intro {
-  padding: 10%;
+  padding: 8%;
   min-height: 300px;
 }
 #intro p {
@@ -300,7 +299,7 @@ svg {
   background-color: white;
 }
 
-/*------------------SERVIZI DEDICATI section------*/
+/*------------------SERVIZI DEDICATI flip-card section------*/
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -315,7 +314,7 @@ svg {
 }
 .flip-card p {
   padding: 3% 2% 0;
-  text-align: left;
+  text-align: justify;
 }
 .flip-card a {
   color: #29AB87;
@@ -432,6 +431,110 @@ input[type=text], input[type=email], input[type=phone], textarea {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+/**-----------------------MEDIA--------**/
+/**---------------------------media**/
+@media (max-width: 900px) {
+  header, header div {
+    height: 80px;
+    display: block;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 18px;
+    margin: 0;
+    display: block;
+  }
+
+  img#logo {
+    height: 55px;
+    margin: 0;
+  }
+
+  header ul {
+    visibility: hidden;
+    margin: 0;
+  }
+
+  #contatti i {
+    visibility: visible;
+  }
+
+  #contatti {
+    position: fixed;
+    top: 18%;
+    right: 0%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #intro p, .subtitle, .description p {
+    font-size: 16px;
+  }
+
+  h2, h3 {
+    font-size: 42px;
+    padding: 5%;
+  }
+
+  .container {
+    padding: 0 0 30px;
+    width: auto;
+  }
+
+  #ditta_photo {
+    min-height: 340px;
+    background-position: 25% 10%;
+  }
+
+  .photo_frame, .description {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  header div {
+    display: block;
+    text-align: center;
+  }
+
+  #logo {
+    margin: auto;
+    clear: both;
+  }
+
+  header h1 {
+    max-height: 50px;
+    margin: unset;
+    display: block;
+  }
+
+  #contatti {
+    top: 78%;
+  }
+
+  #ditta_photo {
+    min-height: 160px;
+    background-position: 25% 10%;
+  }
+
+  h2, h3 {
+    font-size: 28px;
+    padding: 5%;
+  }
+
+  .cards:hover {
+    transform: scale(0.9, 0.9);
+  }
+}
+@media (min-width: 901px) {
+  #contatti i {
+    width: 32px;
+    height: 32px;
+    padding: 4%;
+    margin: 3px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
