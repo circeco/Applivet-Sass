@@ -1,0 +1,1616 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p, h4, h2 {
+  padding: 5%;
+}
+
+p {
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #213140 !important;
+}
+
+/**--------------------Modal**/
+.img-modal {
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+}
+
+/**--------------------header**/
+header {
+  clear: both;
+  color: #213140;
+  position: relative;
+  height: 110px;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-div {
+  position: fixed;
+  clear: both;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  height: 120px;
+}
+
+.logo {
+  background: url("../img/applivet_logo-bianco.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 280px 100px;
+  height: 80px;
+  width: 300px;
+  margin: 0 0 1% 2%;
+  transition: 0.4s;
+}
+
+.logo:hover {
+  transform: scale(0.9, 0.9);
+}
+
+header h2 {
+  font-size: 28px;
+  margin: 1% auto;
+  padding: 2% 5% 2% 0;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0.2% 3% 0.2% 0;
+  text-align: right;
+  width: 220px;
+}
+
+#contatti i {
+  width: 38px !important;
+  height: 38px !important;
+  padding: 5%;
+  margin-left: 5px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  background: #29AB87;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+#icon-contact i:hover {
+  background-color: #239072;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#contatti i:hover {
+  transform: scale(0.9, 0.9);
+}
+
+#intro {
+  padding: 5%;
+  background-image: url(../img/ditta/IMG_1353.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#intro:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+#intro p {
+  padding: 1%;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 2px 2px #239072;
+}
+
+/**------------------------THREE CARDS**/
+.three-cards {
+  z-index: 0;
+  margin: 3% 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three-cards div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  clear: both;
+  height: 460px;
+  width: 320px;
+  margin: 30px auto;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.three-cards h3 {
+  font-size: 18px;
+  color: #213140;
+}
+
+.three-cards p {
+  text-align: left;
+}
+
+#card-one {
+  background-image: url(../img/pronto-intervento.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border-radius: 0;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#card-two {
+  background-image: url(../img/vetraio.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border-radius: 0;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#card-three {
+  background-image: url(../img/lastre.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border-radius: 0;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#to-contact {
+  height: 35px;
+  text-transform: uppercase;
+  width: 50%;
+  background-color: #29AB87;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.three-cards a {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.three-cards button:hover {
+  background-color: #239072;
+  transform: scale(0.9, 0.9);
+}
+
+#card-one:hover, #card-two:hover, #card-three:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+/**----------------DOVE OPERIAMO**/
+.broken-glass {
+  background-color: #f2f2f2;
+}
+
+#top_svg {
+  background-color: #ffffff;
+  clear: both;
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+}
+
+#bottom_svg {
+  clear: both;
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+  background-color: #f2f2f2;
+}
+
+#dove {
+  background-color: #f2f2f2;
+  text-align: center;
+  color: #213140;
+  padding: 0 2% 5%;
+  margin: 0 10%;
+}
+
+#dove p {
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.dove-operiamo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 10%;
+  padding-bottom: 3%;
+}
+
+.dove-operiamo div {
+  clear: both;
+  height: 100%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px auto 30px;
+  width: 325px;
+  cursor: pointer;
+  background-color: white;
+}
+
+#dove strong {
+  font-size: 26px;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+}
+
+/**------------------TIPI DI INTERVENTI**/
+#section-title {
+  color: #213140;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 52px;
+  padding: 5% 0 1%;
+}
+
+#tipi {
+  color: #213140;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 52px;
+  padding: 10%;
+  word-spacing: 20px;
+}
+
+.tipi_interventi {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 5% 5%;
+}
+
+.tipi_interventi div {
+  clear: both;
+  height: 250px;
+  border-radius: 5px;
+  width: 325px;
+  transition: 0.4s;
+  background-color: #f2f2f2;
+}
+
+.cards:hover {
+  transform: scale(0.9, 0.9);
+  opacity: unset;
+}
+
+.tipi_interventi a {
+  cursor: pointer;
+  margin: 40px auto;
+  position: inherit;
+  text-decoration: none;
+}
+
+.tipi_interventi p {
+  text-align: center;
+  color: #213140;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#one, .one {
+  background: url(../img/pronto-intervento.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#two, .two {
+  background: url(../img/vetraio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#three, .three {
+  background: url(../img/vetrina-negozio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#four, .four {
+  background: url(../img/arredo/arredo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#five, .five {
+  background: url(../img/bagno/IMG_4018.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#six, .six {
+  background: url(../img/specchi/IMG_1646.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  z-index: -2;
+}
+
+#seven, .seven {
+  background: url(../img/pareti_interne/pareti_interne1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#eight, .eight {
+  background: url(../img/scale/scale1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#nine, .nine {
+  background: url(../img/pensiline_esterni/IMG_4621.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#ten, .ten {
+  background: url(../img/vetrocamera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  z-index: -2;
+}
+
+#eleven, .eleven {
+  background: url(../img/ferro/ferro10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  z-index: -2;
+}
+
+#twelve, .twelve {
+  background: url(../img/serrande/serrande2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#thirdteen, .thirdteen {
+  background: url(../img/lavorazioni/molatura.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  z-index: -2;
+}
+
+#fourteen, .fourteen {
+  background: url(../img/soppalchi/IMG_5506.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  z-index: -2;
+}
+
+#fifteen, .fifteen {
+  background: url(../img/decorazioni/IMG_7944.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#sixthteen, .sixthteen {
+  background: url(../img/specchi_pareti/specchi_pareti1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+#seventeen, .seventeen {
+  background: url(../img/parapetti/IMG_6392.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+/**------------------CAROUSEL**/
+.carousel-wrapper {
+  height: 400px;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrow-prev {
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+  olor: white;
+}
+
+@media (max-width: 480px) {
+  .arrow, .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+/*Select every element*/
+[id^=item] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg");
+  background-size: cover;
+}
+
+.item-2 {
+  background: url("https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg");
+  background-size: cover;
+}
+
+.item-3 {
+  background: url("https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg");
+  background-size: cover;
+}
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+/**------------------SODDISFIAMO SERVIZI DEDICATI**/
+.soddisfiamo {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.soddisfiamo-description {
+  margin: 0 10%;
+}
+
+.servizi_dedicati {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 10%;
+  padding-bottom: 3%;
+}
+
+.servizi_dedicati div {
+  height: 100%;
+  border-radius: 5px;
+  margin: 20px auto 5%;
+  width: 325px;
+  background-color: white;
+}
+
+.servizi_dedicati a {
+  cursor: pointer;
+  color: #239072;
+}
+
+.collapsible:hover {
+  color: #239072;
+  border: none;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  text-align: left;
+}
+
+/**-----------------------contattaci**/
+#contattaci {
+  color: #213140;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin: 0 5% 10%;
+}
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 2% 0 5%;
+  margin: 0 30%;
+  margin-right: 1%;
+  text-align: left;
+  width: 40%;
+}
+
+#es {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+input[type=text], input[type=email], input[type=phone], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+#question {
+  height: 200px;
+  vertical-align: top;
+}
+
+#button-form {
+  width: 100px;
+  background-color: #29AB87;
+  font-size: 12px;
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#button-form:hover {
+  background-color: #239072;
+}
+
+/**------------------------footer**/
+footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+
+.address p {
+  padding: 0%;
+  font-size: 14px;
+}
+
+#author {
+  padding-bottom: 2%;
+  font-size: 10px;
+}
+
+/**----------------------------second-page**/
+#description-title {
+  color: #213140;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  padding: 10% 0;
+  word-spacing: 10px;
+}
+
+.imp-pag {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  margin: 5% auto;
+  width: 30%;
+  height: 300px;
+  opacity: unset;
+}
+
+.description {
+  background-color: #f2f2f2;
+  margin: 5% auto;
+  width: 70%;
+}
+
+.description-section h2 {
+  color: #ffffff;
+  padding: 0.5% 3%;
+  text-align: right;
+  background-color: #213140;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 200;
+  font-size: 18px;
+}
+
+/**---------------------------media**/
+@media (max-width: 900px) {
+  header, .header-div {
+    height: 80px;
+  }
+
+  .logo {
+    margin: 0 auto;
+    height: 50px;
+  }
+
+  header ul {
+    visibility: hidden;
+    margin: 0;
+  }
+
+  header a {
+    text-align: center;
+    float: unset;
+  }
+
+  #contatti i {
+    visibility: visible;
+  }
+
+  #contatti {
+    position: fixed;
+    top: 78%;
+    right: 0%;
+    box-shadow: -5px 8px 8px 0px rgba(0, 0, 0, 0.19);
+  }
+
+  #section-title, #description-title {
+    font-size: 26px !important;
+  }
+
+  #per {
+    font-size: 14px;
+  }
+
+  p, strong {
+    font-size: 16px !important;
+  }
+
+  .one {
+    opacity: unset;
+  }
+
+  .address p {
+    font-size: 12px !important;
+  }
+
+  #author {
+    font-size: 8px !important;
+  }
+
+  .contact-section {
+    display: inline;
+    flex-wrap: wrap;
+  }
+
+  #contact-form {
+    margin: auto;
+    width: 80%;
+  }
+
+  .es-richieste {
+    margin: auto;
+    width: 80%;
+  }
+
+  .description {
+    width: 97.5%;
+    margin: 0 auto 10%;
+  }
+
+  .photo {
+    width: 97.5%;
+    margin: 10% auto 0;
+  }
+
+  #bottom_svg, #top_svg {
+    height: 100px;
+  }
+
+  .logo {
+    background-size: 180px 60px;
+  }
+}
+@media (max-width: 650px) {
+  #tipi {
+    font-size: 34px;
+    word-spacing: 10px;
+  }
+
+  .servizi_dedicati div {
+    width: 100%;
+  }
+
+  .dove-operiamo div {
+    width: 100%;
+  }
+
+  header h2 {
+    margin: 0 auto 2%;
+    padding: 0;
+    font-size: 18px;
+  }
+}
+/**-----Slide show as a carousel description page----**/
+.slider {
+  /* line them up horizontally */
+  display: flex;
+  /* allow for scrolling */
+  overflow-x: auto;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
+}
+
+#arredo1 {
+  background: url(../img/arredo/arredo1.jpg);
+}
+
+#arredo2 {
+  background: url(../img/arredo/IMG_2624.jpg);
+}
+
+#arredo3 {
+  background: url(../img/arredo/IMG_2862.jpg);
+}
+
+#arredo4 {
+  background: url(../img/arredo/IMG_2864.jpg);
+}
+
+#arredo5 {
+  background: url(../img/arredo/IMG_3021.jpg);
+}
+
+#arredo7 {
+  background: url(../img/arredo/IMG_3367.jpg);
+}
+
+#arredo8 {
+  background: url(../img/arredo/IMG_3415.jpg);
+}
+
+#arredo9 {
+  background: url(../img/arredo/IMG_3538.jpg);
+}
+
+#arredo12 {
+  background: url(../img/arredo/IMG_4516.jpg);
+}
+
+#arredo13 {
+  background: url(../img/arredo/IMG_4604.jpg);
+}
+
+#arredo14 {
+  background: url(../img/arredo/IMG_8145.jpg);
+}
+
+#arredo15 {
+  background: url(../img/mensole/mensole1.jpg);
+}
+
+#arredo16 {
+  background: url(../img/mensole/IMG_3163.jpg);
+}
+
+#arredo17 {
+  background: url(../img/mensole/IMG_3164.jpg);
+}
+
+#arredo18 {
+  background: url(../img/mensole/IMG_8463.jpg);
+}
+
+/*---------foto bagni--------*/
+#bagno1 {
+  background: url(../img/bagno/bagno1.jpg);
+}
+
+#bagno2 {
+  background: url(../img/bagno/a254945b-7402-46e5-b118-d18e0586a948.jpg);
+}
+
+#bagno3 {
+  background: url(../img/bagno/a9481568-b43f-450d-adf0-dc28c04fd10e.jpg);
+}
+
+#bagno4 {
+  background: url(../img/bagno/IMG_0164.jpg);
+}
+
+#bagno5 {
+  background: url(../img/bagno/IMG_6095.jpg);
+}
+
+#bagno6 {
+  background: url(../img/bagno/IMG_5086.jpg);
+}
+
+#bagno7 {
+  background: url(../img/bagno/IMG_5184.jpg);
+}
+
+#bagno8 {
+  background: url(../img/bagno/IMG_5918.jpg);
+}
+
+#bagno9 {
+  background: url(../img/bagno/IMG_1269.jpg);
+}
+
+#bagno10 {
+  background: url(../img/bagno/IMG_1329.jpg);
+}
+
+#bagno11 {
+  background: url(../img/bagno/IMG_1330.jpg);
+}
+
+#bagno12 {
+  background: url(../img/bagno/IMG_1359.jpg);
+}
+
+#bagno13 {
+  background: url(../img/bagno/IMG_1458.jpg);
+}
+
+#bagno14 {
+  background: url(../img/bagno/IMG_1730.jpg);
+}
+
+#bagno15 {
+  background: url(../img/bagno/IMG_1909.jpg);
+}
+
+#bagno16 {
+  background: url(../img/bagno/IMG_1910.jpg);
+}
+
+#bagno17 {
+  background: url(../img/bagno/IMG_1911.jpg);
+}
+
+#bagno18 {
+  background: url(../img/bagno/IMG_1912.jpg);
+}
+
+#bagno19 {
+  background: url(../img/bagno/IMG_1913.jpg);
+}
+
+#bagno20 {
+  background: url(../img/bagno/IMG_1914.jpg);
+}
+
+#bagno21 {
+  background: url(../img/bagno/IMG_2092.jpg);
+}
+
+#bagno22 {
+  background: url(../img/bagno/IMG_2093.jpg);
+}
+
+#bagno23 {
+  background: url(../img/bagno/IMG_2094.jpg);
+}
+
+#bagno24 {
+  background: url(../img/bagno/IMG_2467.jpg);
+}
+
+#bagno25 {
+  background: url(../img/bagno/IMG_2543.jpg);
+}
+
+#bagno26 {
+  background: url(../img/bagno/IMG_6295.jpg);
+}
+
+#bagno27 {
+  background: url(../img/bagno/IMG_2548.jpg);
+}
+
+#bagno28 {
+  background: url(../img/bagno/IMG_2615.jpg);
+}
+
+#bagno29 {
+  background: url(../img/bagno/IMG_3113.jpg);
+}
+
+#bagno30 {
+  background: url(../img/bagno/IMG_3537.jpg);
+}
+
+#bagno31 {
+  background: url(../img/bagno/IMG_3911.jpg);
+}
+
+#bagno32 {
+  background: url(../img/bagno/IMG_3914.jpg);
+}
+
+#bagno33 {
+  background: url(../img/bagno/IMG_3916.jpg);
+}
+
+#bagno34 {
+  background: url(../img/bagno/IMG_4007.jpg);
+}
+
+#bagno35 {
+  background: url(../img/bagno/IMG_4018.jpg);
+}
+
+#bagno36 {
+  background: url(../img/bagno/IMG_4020.jpg);
+}
+
+#bagno37 {
+  background: url(../img/bagno/IMG_4059.jpg);
+}
+
+#bagno38 {
+  background: url(../img/bagno/IMG_4388.jpg);
+}
+
+#bagno39 {
+  background: url(../img/bagno/IMG_4472.jpg);
+}
+
+#bagno40 {
+  background: url(../img/bagno/IMG_4475.jpg);
+}
+
+#bagno41 {
+  background: url(../img/bagno/IMG_4059.jpg);
+}
+
+#bagno42 {
+  background: url(../img/bagno/IMG_4388.jpg);
+}
+
+#bagno43 {
+  background: url(../img/bagno/IMG_4472.jpg);
+}
+
+#bagno44 {
+  background: url(../img/bagno/IMG_4475.jpg);
+}
+
+/*----------specchi su misura--*/
+#specchio1 {
+  background: url(../img/specchi/specchi1.jpg);
+}
+
+#specchio2 {
+  background: url(../img/specchi/IMG_0975.jpg);
+}
+
+#specchio3 {
+  background: url(../img/specchi/IMG_1409.jpg);
+}
+
+#specchio4 {
+  background: url(../img/specchi/IMG_1646.jpg);
+}
+
+#specchio5 {
+  background: url(../img/specchi/IMG_1647.jpg);
+}
+
+#specchio6 {
+  background: url(../img/specchi/IMG_1706.jpg);
+}
+
+#specchio7 {
+  background: url(../img/specchi/IMG_2247.jpg);
+}
+
+#specchio8 {
+  background: url(../img/specchi/IMG_2560.jpg);
+}
+
+#specchio9 {
+  background: url(../img/specchi/IMG_2790.jpg);
+}
+
+#specchio10 {
+  background: url(../img/specchi/IMG_3202.jpg);
+}
+
+#specchio11 {
+  background: url(../img/specchi/IMG_3488.jpg);
+}
+
+#specchio12 {
+  background: url(../img/specchi/IMG_3489.jpg);
+}
+
+#specchio13 {
+  background: url(../img/specchi/eeffcc1f-b7c5-4ee4-b802-e9fb2508e0da.jpg);
+}
+
+#specchio14 {
+  background: url(../img/specchi/IMG_7862.jpg);
+}
+
+#specchio15 {
+  background: url(../img/specchi/IMG_8054.jpg);
+}
+
+/*---------------specchi_parete-----*/
+#specchi_parete1 {
+  background: url(../img/specchi_pareti/specchi_pareti1.jpg);
+}
+
+#specchi_parete2 {
+  background: url(../img/specchi_pareti/IMG_1675.jpg);
+}
+
+#specchi_parete3 {
+  background: url(../img/specchi_pareti/IMG_3957.jpg);
+}
+
+#specchi_parete4 {
+  background: url(../img/specchi_pareti/IMG_5549.jpg);
+}
+
+#specchi_parete5 {
+  background: url(../img/specchi_pareti/IMG_8841.jpg);
+}
+
+#specchi_parete6 {
+  background: url(../img/specchi_pareti/IMG_8843.jpg);
+}
+
+#specchi_parete7 {
+  background: url(../img/specchi_pareti/C70E3F10-42D0-4C44-91D4-8E9B51CA7A40.jpg);
+}
+
+#specchi_parete8 {
+  background: url(../img/specchi_pareti/9B7E9174-E6D5-42F8-A0C2-0BC7CE3DD63F.jpg);
+}
+
+/*-----------------pareti interne ----*/
+#parete1 {
+  background: url(../img/pareti_interne/pareti_interne1.jpg);
+}
+
+#parete2 {
+  background: url(../img/pareti_interne/IMG_0230.jpg);
+}
+
+#parete3 {
+  background: url(../img/pareti_interne/IMG_0517.jpg);
+}
+
+#parete4 {
+  background: url(../img/pareti_interne/IMG_0519.jpg);
+}
+
+#parete5 {
+  background: url(../img/pareti_interne/IMG_1381.jpg);
+}
+
+#parete6 {
+  background: url(../img/pareti_interne/IMG_1383.jpg);
+}
+
+#parete7 {
+  background: url(../img/pareti_interne/IMG_1384.jpg);
+}
+
+#parete8 {
+  background: url(../img/pareti_interne/IMG_1797.jpg);
+}
+
+#parete9 {
+  background: url(../img/pareti_interne/IMG_2717.jpg);
+}
+
+#parete10 {
+  background: url(../img/pareti_interne/IMG_2718.jpg);
+}
+
+#parete11 {
+  background: url(../img/pareti_interne/IMG_5346.jpg);
+}
+
+#parete13 {
+  background: url(../img/pareti_interne/IMG_5842.jpg);
+}
+
+#parete12 {
+  background: url(../img/pareti_interne/IMG_5844.jpg);
+}
+
+#parete14 {
+  background: url(../img/pareti_interne/IMG_6846.jpg);
+}
+
+#parete15 {
+  background: url(../img/pareti_interne/IMG_6845.jpg);
+}
+
+#parete16 {
+  background: url(../img/pareti_interne/IMG_6846.jpg);
+}
+
+#parete17 {
+  background: url(../img/pareti_interne/IMG_6861.jpg);
+}
+
+#parete18 {
+  background: url(../img/pareti_interne/IMG_6866.jpg);
+}
+
+#parete19 {
+  background: url(../img/pareti_interne/IMG_8067.jpg);
+}
+
+#parete20 {
+  background: url(../img/pareti_interne/IMG_8127.jpg);
+}
+
+#parete21 {
+  background: url(../img/pareti_interne/IMG_8882.jpg);
+}
+
+#parete22 {
+  background: url(../img/pareti_interne/IMG_8975.jpg);
+}
+
+#parete23 {
+  background: url(../img/pareti_interne/IMG_8977.jpg);
+}
+
+#parete24 {
+  background: url(../img/pareti_interne/IMG_9329.jpg);
+}
+
+/*---------parapetti----------*/
+#scale1 {
+  background: url(../img/scale/scale1.jpg);
+}
+
+#scale2 {
+  background: url(../img/scale/scale2.jpg);
+}
+
+#scale3 {
+  background: url(../img/scale/scale3.jpg);
+}
+
+#scale4 {
+  background: url(../img/scale/scale4.jpg);
+}
+
+#scale5 {
+  background: url(../img/scale/scale5.jpg);
+}
+
+#scale6 {
+  background: url(../img/scale/scale6.jpg);
+}
+
+#scale7 {
+  background: url(../img/scale/scale7.jpg);
+}
+
+#parapetti1 {
+  background: url(../img/parapetti/IMG_6392.jpg);
+}
+
+#parapetti2 {
+  background: url(../img/parapetti/IMG_0525.jpg);
+}
+
+#parapetti3 {
+  background: url(../img/parapetti/IMG_0878.jpg);
+}
+
+#parapetti4 {
+  background: url(../img/parapetti/IMG_3315.jpg);
+}
+
+#parapetti5 {
+  background: url(../img/parapetti/IMG_3316.jpg);
+}
+
+#parapetti6 {
+  background: url(../img/parapetti/IMG_3317.jpg);
+}
+
+#parapetti8 {
+  background: url(../img/parapetti/parapetti1.jpg);
+}
+
+#parapetti10 {
+  background: url(../img/parapetti/IMG_6393.jpg);
+}
+
+/*-------------pensiline------*/
+#pensiline2 {
+  background: url(../img/pensiline_esterni/IMG_0748.jpg);
+}
+
+#pensiline5 {
+  background: url(../img/pensiline_esterni/IMG_0832.jpg);
+}
+
+#pensiline4 {
+  background: url(../img/pensiline_esterni/IMG_0834.jpg);
+}
+
+#pensiline3 {
+  background: url(../img/pensiline_esterni/IMG_1603.jpg);
+}
+
+#pensiline6 {
+  background: url(../img/pensiline_esterni/IMG_1756.jpg);
+}
+
+#pensiline7 {
+  background: url(../img/pensiline_esterni/IMG_1762.jpg);
+}
+
+#pensiline8 {
+  background: url(../img/pensiline_esterni/IMG_1934.jpg);
+}
+
+#pensiline10 {
+  background: url(../img/pensiline_esterni/IMG_2565.jpg);
+}
+
+#pensiline11 {
+  background: url(../img/pensiline_esterni/IMG_2566.jpg);
+}
+
+#pensiline1 {
+  background: url(../img/pensiline_esterni/IMG_4217.jpg);
+}
+
+#pensiline13 {
+  background: url(../img/pensiline_esterni/IMG_4358.jpg);
+}
+
+#pensiline14 {
+  background: url(../img/pensiline_esterni/IMG_4610.jpg);
+}
+
+#pensiline15 {
+  background: url(../img/pensiline_esterni/IMG_4612.jpg);
+}
+
+#pensiline16 {
+  background: url(../img/pensiline_esterni/IMG_4621.jpg);
+}
+
+#pensiline17 {
+  background: url(../img/pensiline_esterni/IMG_4643.jpg);
+}
+
+#pensiline19 {
+  background: url(../img/pensiline_esterni/IMG_6342.jpg);
+}
+
+#pensiline20 {
+  background: url(../img/pensiline_esterni/IMG_6628.jpg);
+}
+
+#pensiline21 {
+  background: url(../img/pensiline_esterni/IMG_7227.jpg);
+}
+
+#pensiline22 {
+  background: url(../img/pensiline_esterni/IMG_7811.jpg);
+}
+
+#pensiline23 {
+  background: url(../img/pensiline_esterni/IMG_8503.jpg);
+}
+
+#pensiline24 {
+  background: url(../img/pensiline_esterni/IMG_8520.jpg);
+}
+
+#pensiline25 {
+  background: url(../img/pensiline_esterni/IMG_8524.jpg);
+}
+
+#pensiline26 {
+  background: url(../img/pensiline_esterni/IMG_8525.jpg);
+}
+
+#pensiline27 {
+  background: url(../img/pensiline_esterni/IMG_8526.jpg);
+}
+
+#pensiline28 {
+  background: url(../img/pensiline_esterni/IMG_8617.jpg);
+}
+
+#pensiline29 {
+  background: url(../img/pensiline_esterni/IMG_8961.jpg);
+}
+
+/*----------negozi------*/
+#negozi1 {
+  background: url(../img/negozi/negozi1.jpg);
+}
+
+#negozi2 {
+  background: url(../img/negozi/IMG_0279.jpg);
+}
+
+#negozi3 {
+  background: url(../img/negozi/IMG_2873.jpg);
+}
+
+#negozi4 {
+  background: url(../img/negozi/IMG_5518.jpg);
+}
+
+#negozi5 {
+  background: url(../img/negozi/IMG_8463.jpg);
+}
+
+#negozi6 {
+  background: url(../img/negozi/IMG_9216.jpg);
+}
+
+/*--------------soppalchi-----------*/
+#soppalchi1 {
+  background: url(../img/soppalchi/IMG_1098.jpg);
+}
+
+#soppalchi2 {
+  background: url(../img/soppalchi/IMG_3609.jpg);
+}
+
+#soppalchi3 {
+  background: url(../img/soppalchi/IMG_5027.jpg);
+}
+
+#soppalchi4 {
+  background: url(../img/soppalchi/IMG_5506.jpg);
+}
+
+#soppalchi5 {
+  background: url(../img/soppalchi/IMG_6421.jpg);
+}
+
+#soppalchi6 {
+  background: url(../img/soppalchi/IMG_7254.jpg);
+}
+
+#soppalchi7 {
+  background: url(../img/soppalchi/IMG_7892.jpg);
+}
+
+#soppalchi8 {
+  background: url(../img/soppalchi/IMG_9050.jpg);
+}
+
+#soppalchi9 {
+  background: url(../img/ferro/IMG-0033.jpg);
+}
+
+#soppalchi10 {
+  background: url(../img/soppalchi/soppalchi9.jpg);
+}
+
+/*----------------ferro-----------*/
+#ferro13 {
+  background: url(../img/ferro/ferro1.jpg);
+}
+
+#ferro10 {
+  background: url(../img/ferro/IMG_3590.jpg);
+}
+
+#ferro8 {
+  background: url(../img/ferro/IMG_8065.jpg);
+}
+
+#ferro7 {
+  background: url(../img/ferro/IMG_8951.jpg);
+}
+
+#ferro6 {
+  background: url(../img/ferro/IMG_7893.jpg);
+}
+
+#ferro5 {
+  background: url(../img/ferro/ferro10.jpg);
+}
+
+#ferro4 {
+  background: url(../img/ferro/ferro3.jpg);
+}
+
+#ferro3 {
+  background: url(../img/ferro/ferro4.jpg);
+}
+
+#ferro2 {
+  background: url(../img/ferro/ferro5.jpg);
+}
+
+#ferro1 {
+  background: url(../img/ferro/ferro6.jpg);
+}
+
+/*-----------lavorazioni-----------*/
+#lavorazioni1 {
+  background: url(../img/lavorazioni/molatura.jpg);
+}
+
+#lavorazioni2 {
+  background: url(../img/lavorazioni/IMG_1664.jpg);
+}
+
+#lavorazioni3 {
+  background: url(../img/lavorazioni/gattaiola.jpg);
+}
+
+#lavorazioni4 {
+  background: url(../img/lavorazioni/IMG_1352.jpg);
+}
+
+#lavorazioni5 {
+  background: url(../img/lavorazioni/IMG_1353.jpg);
+}
+
+/*-----------------decorazioni-----------*/
+#decorazioni1 {
+  background: url(../img/decorazioni/decorazioni1.jpg);
+}
+
+#decorazioni2 {
+  background: url(../img/decorazioni/grigio_argento.jpg);
+}
+
+#decorazioni3 {
+  background: url(../img/decorazioni/IMG_0029.jpg);
+}
+
+#decorazioni4 {
+  background: url(../img/decorazioni/IMG_7932.jpg);
+}
+
+#decorazioni5 {
+  background: url(../img/decorazioni/IMG_7944.jpg);
+}
+
+/*------------------serrande---------------*/
+#serrande1 {
+  background: url(../img/serrande/serrande1.jpg);
+}
+
+#serrande2 {
+  background: url(../img/serrande/IMG_5265.jpg);
+}
+
+#serrande3 {
+  background: url(../img/serrande/IMG_5271.jpg);
+}
+
+#serrande4 {
+  background: url(../img/serrande/IMG_6889.jpg);
+}
+
+/*# sourceMappingURL=style.css.map */
