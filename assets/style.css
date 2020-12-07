@@ -390,6 +390,7 @@ input[type=text], input[type=email], input[type=phone], textarea {
   background-color: #239072;
 }
 
+/*------------------Scrollbar Description page------*/
 /**---------------------DESCRIPTION PAGE-------**/
 .description {
   background-color: #f2f2f2;
@@ -424,6 +425,21 @@ input[type=text], input[type=email], input[type=phone], textarea {
   -webkit-overflow-scrolling: touch;
   /* make it smooth on iOS */
 }
+.slider::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: #29AB87;
+}
+.slider::-webkit-scrollbar-track {
+  background: #213140;
+}
+.slider {
+  scrollbar-face-color: #29AB87;
+  scrollbar-track-color: #213140;
+  -webkit-overflow-scrolling: auto;
+}
 .slider div {
   flex-shrink: 0;
   width: 100%;
@@ -434,7 +450,6 @@ input[type=text], input[type=email], input[type=phone], textarea {
 }
 
 /**-----------------------MEDIA--------**/
-/**---------------------------media**/
 @media (max-width: 900px) {
   header, header div {
     height: 80px;

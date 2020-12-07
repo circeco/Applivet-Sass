@@ -434,6 +434,31 @@ input[type=text], input[type=email], input[type=phone], textarea {
 }
 
 
+/*------------------Scrollbar Description page------*/
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+    }
+
+    &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    }
+
+    &::-webkit-scrollbar-track {
+    background: $background-color;
+    }
+
+    // For Internet Explorer
+    & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+    -webkit-overflow-scrolling: auto; // for Safari
+    }
+}
+
+
 /**---------------------DESCRIPTION PAGE-------**/
 
 .description {
@@ -465,6 +490,7 @@ input[type=text], input[type=email], input[type=phone], textarea {
     display: flex;      /* line them up horizontally */
     overflow-x: auto;   /* allow for scrolling */
     -webkit-overflow-scrolling: touch;       /* make it smooth on iOS */
+    @include scrollbars(10px, $primary-green, $primary-blue);
 
     div {
         flex-shrink: 0;
@@ -476,9 +502,8 @@ input[type=text], input[type=email], input[type=phone], textarea {
     }
 }
 
-/**-----------------------MEDIA--------**/
 
-/**---------------------------media**/
+/**-----------------------MEDIA--------**/
 
 @media (max-width: 900px) {
 
