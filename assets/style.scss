@@ -178,7 +178,7 @@ footer {
 
 #ditta_photo {
     min-height: 500px;
-    background-image: url('../assets/img/photo_magazzino.jpg');
+    background-image: url('img/photo_magazzino.jpg');
     opacity: 0.8;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -515,7 +515,7 @@ input[type=text], input[type=email], input[type=phone], textarea {
 
     header h1 {max-height: 50px; margin: unset; display: block;}
 
-    #contatti {top: 78%}
+    .whitebox {width: 260px;}
 
     #ditta_photo {min-height: 160px; background-position:25% 10%;}
 
