@@ -62,7 +62,6 @@ section {
 .container {
   z-index: 1;
   display: flex;
-  flex-wrap: wrap;
   padding-bottom: 3%;
 }
 
@@ -500,6 +499,7 @@ input[type=text], input[type=email], input[type=phone], textarea {
   .container {
     padding: 0 0 30px;
     width: auto;
+    flex-wrap: wrap;
   }
 
   #ditta_photo {

@@ -76,7 +76,6 @@ section {
 .container {
     z-index: 1;
     display: flex;
-    flex-wrap: wrap;
     padding-bottom: 3%;
 }
 
@@ -527,7 +526,7 @@ input[type=text], input[type=email], input[type=phone], textarea {
 
     h2, h3 {font-size: 42px; padding: 5%}
 
-    .container{padding: 0 0 30px; width: auto;}
+    .container{padding: 0 0 30px; width: auto; flex-wrap: wrap;}
 
     #ditta_photo {min-height: 340px; background-position:25% 10%;}
 
