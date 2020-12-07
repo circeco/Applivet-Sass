@@ -63,6 +63,7 @@ section {
   z-index: 1;
   display: flex;
   padding-bottom: 3%;
+    flex-wrap: wrap;
 }
 
 img, .slider div {
