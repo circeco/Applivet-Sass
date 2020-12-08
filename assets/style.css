@@ -63,7 +63,8 @@ section {
   z-index: 1;
   display: flex;
   padding-bottom: 3%;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flexbox: flex;
 }
 
 img, .slider div {
@@ -161,15 +162,16 @@ footer a {
 /**--------------------FIRST SECTION**/
 #ditta_photo {
   min-height: 500px;
+  height: 100%;
   background-image: url("img/photo_magazzino.jpg");
   opacity: 0.8;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 #intro {
@@ -216,7 +218,7 @@ footer a {
   height: 35px;
   text-transform: uppercase;
   width: 50%;
-  background-color: #29AB87;
+  background: #29AB87;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -439,6 +441,11 @@ input[type=text], input[type=email], input[type=phone], textarea {
 .slider::-webkit-scrollbar-track {
   background: #213140;
 }
+.slider::-webkit-scrollbar-button {
+  background: #29AB87;
+  color: #213140;
+  height: 5px;
+}
 .slider {
   scrollbar-face-color: #29AB87;
   scrollbar-track-color: #213140;
@@ -531,7 +538,7 @@ input[type=text], input[type=email], input[type=phone], textarea {
   }
 
   .whitebox {
-    width: 260px;
+    width: 80%;
   }
 
   #ditta_photo {
