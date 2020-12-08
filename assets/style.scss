@@ -507,11 +507,11 @@ input[type=text], input[type=email], input[type=phone], textarea {
 
 @media (max-width: 900px) {
 
-    header, header div {height: 80px; display: block; text-align: center}
+    header, header div {height: 80px; display: block; text-align: center;}
 
     header h1 {font-size: 18px; margin: 0; display: block;}
 
-    img#logo {height: 55px; margin: 0}
+    img#logo {height: 55px; margin: 0;}
 
     header ul {visibility: hidden; margin: 0;}
         
@@ -521,20 +521,20 @@ input[type=text], input[type=email], input[type=phone], textarea {
 
     #intro p, .subtitle, .description p {font-size: 16px;}
 
-    h2, h3 {font-size: 42px; padding: 5%}
+    h2, h3 {font-size: 42px; padding: 5%;}
 
     .container{padding: 0 0 30px; width: auto; flex-wrap: wrap;}
 
     #ditta_photo {min-height: 340px; background-position:25% 10%;}
 
-    .photo_frame, .description {width: 90%; margin: 0 auto}
+    .photo_frame, .description {width: 90%; margin: 0 auto;}
 
 }
 
 
 @media (max-width: 500px) {
 
-    header div {display: block; text-align: center}
+    header div {display: block; text-align: center;}
 
     #logo {margin: auto; clear: both;}
 
@@ -544,7 +544,7 @@ input[type=text], input[type=email], input[type=phone], textarea {
 
     #ditta_photo {min-height: 160px; background-position:25% 10%;}
 
-    h2, h3 {font-size: 28px; padding: 5%}
+    h2, h3 {font-size: 28px; padding: 5%;}
 
     .cards:hover {transform: scale(0.9, 0.9);}
 
@@ -553,5 +553,5 @@ input[type=text], input[type=email], input[type=phone], textarea {
 
 @media (min-width: 901px){
 
-    #contatti i {width: 32px; height: 32px; padding: 4%; margin: 3px}
+    #contatti i {width: 32px; height: 32px; padding: 4%; margin: 3px;}
 }
