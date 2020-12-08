@@ -283,7 +283,7 @@ svg {
 }
 
 .marker {
-  background-image: url(../assets/img/logo.jpg);
+  background-image: url(../assets/img/logo.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 50px;
