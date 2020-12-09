@@ -1,0 +1,23 @@
+{
+  "name": "applivet-sass",
+  "version": "1.0.0",
+  "description": "@copyright 2020 APPLIVET s.r.l.",
+  "main": "index.html",
+  "dependencies": {
+    "sass": "^1.30.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/circeco/Applivet-Sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/circeco/Applivet-Sass/issues"
+  },
+  "homepage": "https://github.com/circeco/Applivet-Sass#readme"
+}
