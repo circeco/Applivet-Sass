@@ -61,7 +61,7 @@ h4 {
 }
 
 .subtitle {
-    margin: 0 10%;
+    margin: 0 15%;
     font-size: 20px; 
     font-weight: 100;
     text-align: left;
@@ -522,6 +522,8 @@ input[type=text], input[type=email], input[type=phone], textarea {
     #intro p, .subtitle, .description p {font-size: 16px;}
 
     h2, h3 {font-size: 42px; padding: 5%;}
+
+    .flip-card p {font-size: 12px}
 
     .container{padding: 0 0 30px; width: auto; flex-wrap: wrap;}
 
