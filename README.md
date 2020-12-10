@@ -7,7 +7,7 @@ Stream One Project - Code Institute
 This is a Static Front-End project developed with User-Centric Mobile-First approach. 
 It was created as a real-case commercial website for a construction company based in Milan. 
 The website includes the main page that display clear and straight-forward info, and a description page that contain photo gallery and more detail descriptions. 
-The technologies used are HTML, SASS and JavaScript. The site is deployed in ARUBA.it. 
+The technologies used are HTML, SASS and JavaScript. The site is deployed on ARUBA.it. 
 
 ---
 ---
@@ -55,7 +55,7 @@ Users on Applivet.it will be able to:
 * Browse through a gallery of the company previous works  
 
 The website does not deal with any sensitive data and no account or log in is required to the user to browse freely 
-Applivet.it can be used well and all functionality are preserved across all browser and different devices. 
+Applivet.it can be used well and all functionalities are preserved across all browser and different devices. 
 
 ##### back to [top](#table-of-contents)
 
@@ -70,7 +70,7 @@ There would be no searching for contact details from the user since access to co
 
 
 ### Design Dependency
-[Boothstrap 3.3.7](https://getbootstrap.com/) It is only used for the modal element. 
+[Bootstrap 3.3.7](https://getbootstrap.com/) It is only used for the modal element. 
 
 [MapBox 1.12.0](https://www.mapbox.com/) Map studio is used to design the style of the map displayed, its elements and functionalities. 
 
@@ -113,21 +113,21 @@ JS is been used to create three distinct functionalities.
 
 ### **[NPM](https://www.npmjs.com/)** 
 The package management system for JS was used to compile SASS directly into CSS styles. The following code will need to be run in the terminal: 
-```bash
+```
 npm install 
 ```
 followed by 
-```bash
+```
 npm run sass-watch 
 ```
 In this way, as changes are made in Sass would be on the fly compiled in CSS and visible on the local file system that the browser is using (localhost).
 
 
 
-### **[ImageMagik](https://imagemagick.org/)** 
+### **[ImageMagick](https://imagemagick.org/)** 
 Images were resized to decrease the website site and so to speed up browser loading time, in particular the description page, which contains the photo gallery. 
 The resizing involved more then 200 images and was done in the terminal using the following code: 
-```bash
+```
 for F in *.jpg ; do magik $F -resize '1000x1000>' mini/$F ; done
 ```
 
