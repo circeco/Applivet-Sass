@@ -1,6 +1,6 @@
 # [Applivet.it](https://www.applivet.it/) 
 
-![Applivet tour](/static/img/mockup.png)
+![Applivet](/assets/img/mockup.png)
 
 Stream One Project - Code Institute 
 
@@ -75,19 +75,19 @@ There would be no searching for contact details from the user since access to co
 [Fontawesome](https://fontawesome.com/) The website make use of some icons for the contact buttons mainly. 
 
 ### Fonts 
-[Google Font](https://fonts.google.com/) 
-  - [Titillium Web](https://fonts.google.com/specimen/Titillium+Web) The font is been choosen because of the similarity with the company logo. The font is also applied to the website location map. 
+[Google Font](https://fonts.google.com/) <span style="font-family: 'Titillium Web', sans-serif">
+  - [Titillium Web](https://fonts.google.com/specimen/Titillium+Web) The font is been choosen because of the similarity with the company logo. The font is also applied to the website location map.</span>
 
 
 ### Colors 
 Colors are kept at minimum with use of neutral color such as white, grey and a shade of navy blue for a clean and elegant effect. 
 Attention to fundamental key elements, like contact buttons, are highlighted with a bright green that contrast and matching at the same time the other colors. 
 
-- ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) #FFFFFF Primary color: "Simply White" - White is the colur of clarity and semplicity to contrast any colour.
-- ![#000000](https://placehold.it/15/213140/000000?text=+) #213140 Primary color: "Dark BLue" - Elegant and classic. 
+- ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) #FFFFFF "Simply White" - Primary color: White is the colur of clarity and semplicity to contrast any colour.
+- ![#000000](https://placehold.it/15/213140/000000?text=+) #213140 "Dark BLue" - Primary color: Elegant and classic. 
 
-- ![#006064](https://placehold.it/15/29AB87/000000?text=+) #29AB87 Secondary color: "Dark cyan - lime green" - Young, fun and noticeable.
-- ![#FF5252](https://placehold.it/15/f2f2f2/000000?text=+) #f2f2f2 Secondary color: "Light grey" - This color is used to give further layers of contrast without clash much with the white. 
+- ![#006064](https://placehold.it/15/29AB87/000000?text=+) #29AB87 "Dark cyan - lime green" - Secondary color: Young, fun and noticeable.
+- ![#FF5252](https://placehold.it/15/f2f2f2/000000?text=+) #f2f2f2 "Light grey" - Secondary color: This color is used to give further layers of contrast without clash much with the white. 
 
 
 ##### back to [top](#table-of-contents)
@@ -95,11 +95,11 @@ Attention to fundamental key elements, like contact buttons, are highlighted wit
 ---
 ## Technologies Used
 
-**[HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)**
+### **[HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)**
 
-**[SASS](https://sass-lang.com/)** - The use of this stylesheet language allowed me to reduce drastically ripetition in styling codes. This was thanks of the use its features (variables, nesting and loops). 
+### **[SASS](https://sass-lang.com/)** - The use of this stylesheet language allowed me to reduce drastically ripetition in styling codes. This was thanks of the use its features (variables, nesting and loops). 
 
-**[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** - JS is been used to create three distinct functionalities. 
+### **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** - JS is been used to create three distinct functionalities. 
 
 - [jQuery 2.1.1](https://jquery.com/) - The modal on the website was created with this framework, which is very useful to keep the JS coding at minimum.
 
@@ -107,7 +107,8 @@ Attention to fundamental key elements, like contact buttons, are highlighted wit
 
 - [Emailjs](https://www.emailjs.com/) - With the implementation their API emails are sent directly from the Javascript code and no server side code is required.
 
-**[NPM](https://www.npmjs.com/)** - The package management system for JS was used to compile SASS directly into CSS styles. The following code will need to be run in the terminal: 
+
+### **[NPM](https://www.npmjs.com/)** - The package management system for JS was used to compile SASS directly into CSS styles. The following code will need to be run in the terminal: 
 ```bash
 npm install 
 ```
@@ -117,7 +118,8 @@ npm run sass-watch
 ```
 In this way, as changes are made in Sass would be on the fly compiled in CSS and visible on the local file system that the browser is using (localhost).
 
-**[ImageMagik](https://imagemagick.org/)** - Images were resized to decrease the website site and so to speed up browser loading time, in particular the description page, which contains the photo gallery. 
+
+### **[ImageMagik](https://imagemagick.org/)** - Images were resized to decrease the website site and so to speed up browser loading time, in particular the description page, which contains the photo gallery. 
 The resizing involved more then 200 images and was done in the terminal using the following code: 
 ```bash
 for F in *.jpg ; do magik $F -resize '1000x1000>' mini/$F ; done
