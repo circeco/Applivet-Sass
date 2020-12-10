@@ -1,4 +1,4 @@
-# [Applivet.it](https://www.applivet.it/) 
+# [Applivet.it](https://www.applivet.it/){:target="_blank" rel="noopener"} 
 
 ![Applivet](/assets/img/mockup.png)
 
@@ -28,7 +28,7 @@ The technologies used are HTML, SASS and JavaScript. The site is deployed in ARU
     - [**JavaScript**](#javascript)
     - [**NPM**](#npm)
     - [**ImageMagik**](#imagemagik)
-4. [**Compatibility**](#testing)
+4. [**Compatibility**](#compatibility)
 5. [**Credits**](#credits)
 
 ---
