@@ -1,4 +1,4 @@
-# [Applivet.it](https://www.applivet.it/){:target="_blank" rel="noopener"} 
+# [Applivet.it](https://www.applivet.it/)
 
 ![Applivet](/assets/img/mockup.png)
 
@@ -140,8 +140,6 @@ for F in *.jpg ; do magik $F -resize '1000x1000>' mini/$F ; done
 Some known problems are visible with older version of Safari but it is nothing that will compromise the website clarity and readability but rather some styles are not being applied in the same way. 
 Other cross-browser bugs have been tested and fixed. 
 
-
-##### back to [top](#table-of-contents)
 
 ---
 ## Credits
