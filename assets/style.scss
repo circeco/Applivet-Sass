@@ -346,9 +346,10 @@ svg {
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 380px;
+    width: 340px;
+    height: 400px;
     perspective: 1000px;
+    margin: 2% auto;
 
     h4 {
         padding: 20% 5%;
@@ -359,14 +360,11 @@ svg {
     }
 
     p {
-        padding: 3% 2% 0;
-        text-align: justify;
+        padding: 8%;
     }
 
     a {
         color: $primary-green;
-        position: absolute;
-        bottom: 5px;
         text-decoration: underline;
         font-weight: 600;
     }

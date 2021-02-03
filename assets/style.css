@@ -308,9 +308,10 @@ svg {
 /*------------------SERVIZI DEDICATI flip-card section------*/
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 380px;
+  width: 340px;
+  height: 400px;
   perspective: 1000px;
+  margin: 2% auto;
 }
 .flip-card h4 {
   padding: 20% 5%;
@@ -319,13 +320,10 @@ svg {
   max-width: 80px;
 }
 .flip-card p {
-  padding: 3% 2% 0;
-  text-align: justify;
+  padding: 8%;
 }
 .flip-card a {
   color: #29AB87;
-  position: absolute;
-  bottom: 5px;
   text-decoration: underline;
   font-weight: 600;
 }

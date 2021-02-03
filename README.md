@@ -7,7 +7,7 @@ Stream One Project - Code Institute
 This is a Static Front-End project developed with User-Centric Mobile-First approach. 
 It was created as a real-case commercial website for a construction company based in Milan. 
 The website includes the main page that display clear and straight-forward info, and a description page that contain photo gallery and more detail descriptions. 
-The technologies used are HTML, SASS and JavaScript. The site is deployed on ARUBA.it. 
+The technologies used are HTML, SASS and JavaScript. The website is hosted and deployed with ARUBA.it. 
 
 ---
 ---
